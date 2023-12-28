@@ -20,7 +20,7 @@ public class VendingMachine {
                     if (budget>=20){
                     System.out.println("----------Receipt----------");
                     System.out.println("You ordered Tite!");
-                        System.out.println(("Change:")+ (budget-25));
+                        System.out.println(("Change:")+ (budget-20));
                     }else{
                         System.out.println("haha tite!");
                     }
@@ -29,7 +29,7 @@ public class VendingMachine {
                     if (budget>=25){
                     System.out.println("----------Receipt----------");
                     System.out.println("You ordered Burat!");
-                        System.out.println(("Change:")+ (budget-30));
+                        System.out.println(("Change:")+ (budget-25));
                     }else{
                         System.out.println("Puke!");
                     }
@@ -38,7 +38,7 @@ public class VendingMachine {
                     if (budget>=30){
                     System.out.println("----------Receipt----------");
                     System.out.println("You ordered Pakyu!");
-                        System.out.println(("Change:")+ (budget-35));
+                        System.out.println(("Change:")+ (budget-30));
                     }else{
                         System.out.println("Pakyutoo!"); 
                     }
