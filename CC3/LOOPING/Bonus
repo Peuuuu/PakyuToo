@@ -1,0 +1,33 @@
+CHOICE = "Yes"
+while CHOICE != "NAUR":
+    print("Office available: IT / ACCT / HR")
+    offices = input("Office:").upper()
+    Years_in_Service = int(input("Number of years in service:"))
+
+    #more than 10 years in service
+    if Years_in_Service >= 10:
+        if offices == "IT":
+            Bonus = 10000
+
+        if offices == "ACCT":
+            Bonus = 12000
+        if offices == "HR":
+            Bonus = 15000
+
+    #less tha 10 years in service
+    if Years_in_Service < 10:
+        if offices == "IT":
+            Bonus = 5000
+        if offices == "ACCT":
+            Bonus = 6000
+        if offices == "HR":
+            Bonus = 7500
+
+    print(f"""
+    __________________________________________
+    | Office: {offices}
+    | Years of Service : {Years_in_Service}
+    | Bonus : {Bonus:,} 
+    ------------------------------------------""")
+
+    CHOICE = input("Do you want to calculate again?:").upper()
